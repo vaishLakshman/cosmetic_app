@@ -50,7 +50,7 @@ const PlumpKits = () => {
   };
   return (
     <div className="plump-container bg-orange-50 h-full px-7 py-20">
-      <div className="flex justify-between mb-10">
+      <div className="flex justify-between mb-15 lg:mb-10">
         <h1 className="text-5xl text-primary font-oswald font-bold">
           PLUMPING KITS
         </h1>
@@ -60,7 +60,7 @@ const PlumpKits = () => {
           textColor={"primary"}
         />
       </div>
-      <div className="grid grid-cols-4 place-items-center">
+      <div className="lg:grid grid-cols-4 place-items-center">
         {Products?.map((product, index) => (
           <PlumpCard key={index} product={product} />
         ))}

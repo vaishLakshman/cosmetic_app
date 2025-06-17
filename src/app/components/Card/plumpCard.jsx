@@ -4,7 +4,7 @@ const PlumpCard = (props) => {
   const product = props.product;
 
   return (
-    <div>
+    <div className="mb-15 lg:m-0">
       <div
         className="card-container border-2 border-primary relative bg-red-300 w-[20rem] lg:w-[22rem] lg:h-fit mb-5 lg:mb-3 rounded-2xl cursor-pointer overflow-hidden"
         onClick={product.onClick}
