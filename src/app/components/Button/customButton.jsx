@@ -1,7 +1,6 @@
 "use client";
 const CustomButton = (props) => {
   const { text, onClick, isCart, textColor } = props;
-  console.log("data", props);
 
   return (
     <button
