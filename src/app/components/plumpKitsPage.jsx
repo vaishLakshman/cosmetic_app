@@ -60,11 +60,10 @@ const PlumpKits = () => {
           textColor={"primary"}
         />
       </div>
-      <PlumpCard product={Products[3]} />
       <div className="grid grid-cols-4 place-items-center">
-        {Products?.map((product) => {
-          <PlumpCard product={product} />;
-        })}
+        {Products?.map((product, index) => (
+          <PlumpCard key={index} product={product} />
+        ))}
       </div>
     </div>
   );
